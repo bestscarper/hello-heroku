@@ -10,7 +10,7 @@ test('responds to requests', (t) => {
             child.kill();
             t.false(error);
             t.equal(response.statusCode,200);
-            t.notEqual(-1,body.indexOf('Hello, world'));
+            t.notEqual(body.indexOf('Hello, universe'),-1);
         });
     });
 });
